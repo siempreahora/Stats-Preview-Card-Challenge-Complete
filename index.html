@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Outermost shell that positions the box -->
+    <div class="shell">
+      <!-- main-container -> product layout w/ flex/css grid -->
+      <div class="main-container">
+        <div
+          class="hero-img"
+          role="img"
+          aria-label="three ladies on laptops"
+        ></div>
+
+        <!-- Contains and positions the text -->
+        <div class="product-container">
+          <!-- Containers the header and description -->
+          <div class="product-section">
+            <h1 class="product-title">
+              Get <span>insights</span> that help your business grow.
+            </h1>
+            <p class="product-desc">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+            <ul class="grid-container grid--3-cols grid--text-center">
+              <li class="stat-num flex-item">10k+</li>
+              <li class="stat-num flex-item">314</li>
+              <li class="stat-num flex-item">12m+</li>
+
+              <li class="stat-text flex-item">companies</li>
+              <li class="stat-text flex-item">templates</li>
+              <li class="stat-text flex-item">queries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/siempreahora">Levi Jimenez</a>.
+    </div>
+  </body>
+</html>

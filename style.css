@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+/* ******************************************* */
+/* REUSEABLE */
+/* ******************************************* */
+
+.grid-container {
+  display: grid;
+  /* gap: 1rem; */
+  row-gap: 0.4rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 8rem);
+}
+
+.grid--text-center {
+  text-align: center;
+  /* margin: auto; */
+}
+
+.grid-container li {
+  list-style: none;
+}
+
+.flex-item {
+  display: flex;
+}
+
+/* ******************************************* */
+/* SHELLS & CONTAINERS */
+/* ******************************************* */
+
+.shell {
+  background-color: hsl(244, 38%, 16%);
+  margin: 0 auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 10px;
+  overflow: hidden;
+  width: 68rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* gap: 3rem; */
+  /* padding: 0 1.5rem 0 2.5rem; */
+}
+
+.hero-img {
+  background-image: linear-gradient(to bottom, #7326a394, #7326a394),
+    url(/images/image-header-desktop.jpg);
+  background-size: cover;
+
+  /* width: 34rem;
+  height: 28rem; */
+
+  width: 34rem;
+  height: 28rem;
+  /* grid-column: 2; */
+}
+
+.product-container {
+  display: flex;
+  align-items: center;
+
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* ******************************************* */
+/* PRODUCT */
+/* ******************************************* */
+
+.product-section {
+  /* padding: 2rem; */
+  padding: 0 0 0 4.5rem;
+  /* padding: 0 3.5rem 0 2.5rem; */
+}
+
+.product-title {
+  padding: 0 5rem 0 0;
+}
+
+.product-title,
+.stat-num {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+}
+
+.product-title span {
+  color: hsl(277, 64%, 61%);
+}
+
+.product-desc {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 1.5rem 0 5rem;
+  margin: 0 9rem 0 0;
+  line-height: 1.6rem;
+  font-size: 0.8rem;
+}
+
+.product-desc,
+.stat-text {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* ******************************************* */
+/* STATS */
+/* ******************************************* */
+
+.stat-num {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.stat-text {
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.8rem;
+}
+
+/* ******************************************* */
+/* FRONT-END MENTOR STUFF */
+/* ******************************************* */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
